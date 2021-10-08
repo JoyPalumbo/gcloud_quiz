@@ -1,4 +1,6 @@
-export const questions = [
+
+
+export const questions: {question: string, answer1: string, answer2: string, answer3: string, answer4: string, correctAnswer: Array<string>  }[]= [
     {question: "You are a project owner and need your co-worker to deploy a new version of your application to App Engine. You want to follow Google’s recommended practices. Which IAM roles should you grant your co-worker?",
     answer1: "Project Editor",
     answer2: "App Engine Service Admin",
