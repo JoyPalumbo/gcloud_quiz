@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "esnext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,10 +18,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "noImplicitThis": true,
+    // "alwaysStrict": true,
     "jsx": "react-jsx"
   },
   "include": [
