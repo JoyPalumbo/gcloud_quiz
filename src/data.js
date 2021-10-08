@@ -6,19 +6,19 @@ export const questions = [
     answer4: "App Engine Code Viewer",
     correctAnswer: ["App Engine Deployer"]
     },
-    {question: "",
-    answer1: "",
-    answer2: "",
-    answer3: "",
-    answer4: "",
-    correctAnswer: []
+    {question: "Your company has reserved a monthly budget for your project. You want to be informed automatically of your project spend so that you can take action when you approach the limit. What should you do?",
+    answer1: "Link a credit card with a monthly limit equal to your budget.",
+    answer2: " Create a budget alert for 50%, 90%, and 100% of your total monthly budget.",
+    answer3: " In App Engine Settings, set a daily budget at the rate of 1/30 of your monthly budget.",
+    answer4: "In the GCP Console, configure billing export to BigQuery. Create a saved view that queries your total spend.",
+    correctAnswer: ["Create a budget alert for 50%, 90%, and 100% of your total monthly budget."]
     },
-    {question: "",
-    answer1: "",
+    {question: "You have a project using BigQuery. You want to list all BigQuery jobs for that project. You want to set this project as the default for the bq command-line tool. What should you do?",
+    answer1: " Use 'gcloud config set project' to set the default project.",
     answer2: "",
     answer3: "",
     answer4: "",
-    correctAnswer: []
+    correctAnswer: [ "Use 'gcloud config set project' to set the default project."]
     },
     {question: "",
     answer1: "",
