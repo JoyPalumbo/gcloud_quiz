@@ -39,23 +39,59 @@ function Questions() {
        }
     }
 
+      // function updateScore(e: MouseEvent<HTMLButtonElement>){
+      //   if(typeof rightAnswer === 'string'){
+      //     console.log("string")
+      //   }
+      // }
+
     function updateScore(e: MouseEvent<HTMLButtonElement>){
       console.log("we're clicking",  e.currentTarget.getAttribute('data-appMode'))
-        for(let i = 0; i < rightAnswer.length; i++){
-          console.log("right answer", rightAnswer[i])
-          if(e.currentTarget.getAttribute('data-appMode') == rightAnswer[i]){
+      // if(rightAnswer.length === 1) {
+      //   console.log("right answer:", rightAnswer[0], "answer chosen:", e.currentTarget.getAttribute('data-appMode'))
+        let chosen: string | null = e.currentTarget.getAttribute('data-appMode')
+      //   console.log("our choice", chosen)
+        if(chosen?.match(rightAnswer[0]) !== null) {
+        // if(chosen.localeCompare(rightAnswer[0])){
+        console.log("the right answer is: ", rightAnswer[0], "correct")
+      
+        }
+          if(chosen === rightAnswer[0]){
             setScore(score + 1)
             console.log("our score", score)
            }
           else {
              console.log("Wrong answer")
           }
-        }
-    }
+        
+       }
+      //  else {
+      //   let chosenArr = []
+      //   for(let i = 0; i < rightAnswer.length; i++){
+      //     console.log("Inside loop", "right answer", rightAnswer[i], "answer chosen", e.currentTarget.getAttribute('data-appMode'))
+      //     let chosen: string | null = e.currentTarget.getAttribute('data-appMode')
+          
+      //     if(chosen?.match(rightAnswer[i]) !== null){
+      //       chosenArr.push(chosen);
+      //      }
+      //     else {
+      //        console.log("Wrong answer inside loop")
+      //     }
+      //   }
+         
+      //    if(chosenArr.length === rightAnswer.length) {
+      //     setScore(score + 1)
+      //     console.log("our score", score)
+      //     }
+      //   else {
+      //     console.log("sorry")
+      //   }
+      // }
+    // }
 
-    useEffect(() => {
+    // useEffect(() => {
   
-    }, [])
+    // }, [])
 
   return (
     <div className="questions">
