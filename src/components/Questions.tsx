@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, MouseEvent } from 'react';
-// import './App.css';
+
 import { questions } from '../data'
 
 function Questions() {
@@ -101,14 +101,17 @@ function Questions() {
         </h2>
       :
       <div>
-      <h3 >{questionNum}: {currQuestion}</h3> 
+      <h3 className="question">{questionNum}. {currQuestion}</h3> 
       {answerChoices.map(answer => (
-        <button data-appMode={ answer }onClick={updateScore}>{answer}</button>
+        <button className="neutral-button" data-appMode={ answer }onClick={updateScore}>{answer}</button>
       ))}
-      <button onClick={nextQuestion}>Next</button>
+      <button className="next-button" onClick={nextQuestion}>Next</button>
       </div>
     }
-    <h4>Your Score: {score}</h4>
+    {clicked === true ?
+    <h3>Your Score: {score}</h3>
+    :
+    <h4>Good Luck!</h4>}
     </div>
   );
 }

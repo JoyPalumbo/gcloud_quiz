@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -24,12 +24,69 @@
   color: white;
 }
 
-.neutral {
-  background-color: #61dafb;
+.neutral-button {
+  /* background-color: #61dafb;
   display: block;
 
-  border-radius:10px;
+  border-radius:5px; */
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  /* display: block; */
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  /* font-weight: 500; */
+  height: 40px;
+  width: 500px;
+  line-height: 20px;
+  list-style: none;
+  margin: 10px 300px;
+  outline: none;
+  padding: 15px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  /* vertical-align: baseline; */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.next-button {
+  background-color: white;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 60px;
+}
+
+.question {
+  background-color: white;
+  color: #EA4C89;
+  padding: 10px;
+  margin: 10px 60px;
+  border-radius: 10px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 25px;
+
+}
+
+.neutral-button:hover,
+.neutral-button:focus {
+  background-color: #F082AC;
+}
+
 
 .rightAnswer {
   background-color: green;
@@ -50,7 +107,6 @@
 .App-logo {
   height: 100px;
   width: 120px;
-  /* animation: loading-spinner 5s linear infinate */
 
 }
 
