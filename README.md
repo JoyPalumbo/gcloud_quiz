@@ -12,6 +12,7 @@ Next steps are:
 6.  Open up GitHub repository to be open source
 7.  Perhaps update style to match Google's style
 8.  Have a navigation with home page, about page and resource page
+9. Refacter into smaller components to have better seperation of concerns
 
 
 ## Available Scripts
