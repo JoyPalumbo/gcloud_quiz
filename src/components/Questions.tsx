@@ -12,7 +12,10 @@ function Questions() {
   const [answerChoices, setAnswerChoices] = useState<Array<string>>([]);
   const [score, setScore] = useState<number>(0)
   const [clicked, setClicked] = useState<boolean>(false)
+  const [startClicked, setStartClicked] = useState<boolean>(false)
   const [questionNum, setQuestionNum] = useState<number>(0)
+  // const [showAnswer, showAnswer] = useState<string>('')
+  // const [buttonClass, setButtonClass] = useState<string>('')
 
 
 
@@ -25,7 +28,8 @@ function Questions() {
       }
     
      function nextQuestion(){
-      setClicked(true)
+      setStartClicked(true)
+      setClicked(false)
       setQuestionNum(questionNum + 1)
       if(questionNum <= questions.length - 1) {
         console.log(questionNum)
@@ -58,9 +62,13 @@ function Questions() {
         }
           if(chosen === rightAnswer[0]){
             setScore(score + 1)
+            // setButtonClass('rightAnswer')
+            setClicked(true)
             console.log("our score", score)
            }
           else {
+            // setButtonClass('wrongAnswer')
+            setClicked(true)
              console.log("Wrong answer")
           }
         
@@ -95,20 +103,38 @@ function Questions() {
 
   return (
     <div className="questions">
-          {clicked === false ?
+          {startClicked === false ?
         <h2 onClick={nextQuestion}>
           Start
         </h2>
-      :
+      : 
+      // [(clicked === false ?
       <div>
       <h3 className="question">{questionNum}. {currQuestion}</h3> 
       {answerChoices.map(answer => (
-        <button className="neutral-button" data-appMode={ answer }onClick={updateScore}>{answer}</button>
+        clicked === false ?
+        <button className="neutral-button" data-appMode={ answer } onClick={updateScore}>{answer}</button>
+        :
+      [ clicked === true && answer === rightAnswer[0] ?
+      <button className="rightAnswer" data-appMode={ answer } onClick={updateScore}>{answer}</button>
+        :
+        <button className="wrongAnswer" data-appMode={ answer } onClick={updateScore}>{answer}</button>
+      ]
       ))}
+      
       <button className="next-button" onClick={nextQuestion}>Next</button>
       </div>
+      // :
+      // <div>
+      // <h3 className="question">{questionNum}. {currQuestion}</h3> 
+      // {answerChoices.map(answer => (
+      //   <button className={buttonClass} data-appMode={ answer }onClick={updateScore}>{answer}</button>
+      // ))}
+      // <button className="next-button" onClick={nextQuestion}>Next</button>
+      // </div>
+      //   )]
     }
-    {clicked === true ?
+    {startClicked === true ?
     <h3>Your Score: {score}</h3>
     :
     <h4>Good Luck!</h4>}
