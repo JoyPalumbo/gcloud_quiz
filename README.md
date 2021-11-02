@@ -1,6 +1,17 @@
 ## About
 I have created this app to help study for the Google associate cloud engineer certification test.  I have gathered these questions from many sources. Some of those sources being from Google's practice exam, questions from Google Cloud Skills Boost course, and various quizes on line. I did not create any of these questions and do not take credit for them.  This is a personal project for me but I am putting it on line in case others can get some use from it.
 
+## Next Steps for this quiz
+I just started building this app so I have a lot to do to finish the app. 
+Next steps are:
+1. Have buttons reflect right answers/wrong answers after user has selected choice 
+2. Pick a set number for the quiz to go to and stop after that number has been reached.
+3. Save users answers and show users selected answers vs correct answers when quiz is done
+4. Have multiple quizes so user gets plenty of practice but isn't stuck taking 1 really long quiz.
+5. Show them a percentage/"grade" for quize once finished
+6.  Open up GitHub repository to be open source
+7.  Perhaps update style to match Google's style
+8.  Have a navigation with home page, about page and resource page
 
 
 ## Available Scripts
