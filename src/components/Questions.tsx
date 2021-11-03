@@ -58,17 +58,27 @@ function Questions() {
 
   return (
     <div className="questions">
+      {/* A. if not clicked start yet show start text */}
           {startClicked === false ?
         <h2 onClick={nextQuestion}>
           Start
         </h2>
       : 
+      // A. else show questions
+    <div>
+      {/* B. Show finished text */}
+        {questionNum === questions.length ?
+    <h3>Finished!!!!</h3>
+    :   
+    // B. else show questions
       <div>
       <h3 className="question">{questionNum}. {currQuestion}</h3> 
       {answerChoices.map(answer => (
+        // C. If not clicked show pink buttons
         clicked === false ?
         <button className="neutral-button" data-appMode={ answer } onClick={updateScore}>{answer}</button>
         :
+        // C. else, once button clicked, show right and wrong answers
       [ clicked === true && answer === rightAnswer[0] ?
       <button className="rightAnswer" data-appMode={ answer } onClick={updateScore}>{answer}</button>
         :
@@ -78,11 +88,16 @@ function Questions() {
       
       <button className="next-button" onClick={nextQuestion}>Next</button>
       </div>
+}
+      </div>
     }
+    {/* D. If start clicked pressed show score */}
     {startClicked === true ?
     <h3>Your Score: {score}</h3>
     :
+    // D. Else don't show score yet  but show goood luck text
     <h4>Good Luck!</h4>}
+
     </div>
   );
 }
