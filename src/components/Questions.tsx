@@ -6,17 +6,11 @@ import { questions } from '../data'
 function Questions() {
   const [currQuestion, setCurrQuestion] = useState<string>('')
   const [rightAnswer, setRightAnswer] = useState<Array<string>>([])
-  // const [wrongAnswer1, setWrongAnswer1] = useState('')
-  // const [wrongAnswer2, setWrongAnswer2] = useState('')
-  // const [wrongAnswer3, setWrongAnswer3] = useState('')
   const [answerChoices, setAnswerChoices] = useState<Array<string>>([]);
   const [score, setScore] = useState<number>(0)
   const [clicked, setClicked] = useState<boolean>(false)
   const [startClicked, setStartClicked] = useState<boolean>(false)
   const [questionNum, setQuestionNum] = useState<number>(0)
-  // const [showAnswer, showAnswer] = useState<string>('')
-  // const [buttonClass, setButtonClass] = useState<string>('')
-
 
 
     function shuffleArray(question: Array<string>) {
@@ -43,63 +37,24 @@ function Questions() {
        }
     }
 
-      // function updateScore(e: MouseEvent<HTMLButtonElement>){
-      //   if(typeof rightAnswer === 'string'){
-      //     console.log("string")
-      //   }
-      // }
 
     function updateScore(e: MouseEvent<HTMLButtonElement>){
       console.log("we're clicking",  e.currentTarget.getAttribute('data-appMode'))
-      // if(rightAnswer.length === 1) {
-      //   console.log("right answer:", rightAnswer[0], "answer chosen:", e.currentTarget.getAttribute('data-appMode'))
         let chosen: string | null = e.currentTarget.getAttribute('data-appMode')
-      //   console.log("our choice", chosen)
         if(chosen?.match(rightAnswer[0]) !== null) {
-        // if(chosen.localeCompare(rightAnswer[0])){
-        console.log("the right answer is: ", rightAnswer[0], "correct")
-      
+        console.log("the right answer is: ", rightAnswer[0], "correct")     
         }
           if(chosen === rightAnswer[0]){
             setScore(score + 1)
-            // setButtonClass('rightAnswer')
             setClicked(true)
             console.log("our score", score)
            }
           else {
-            // setButtonClass('wrongAnswer')
             setClicked(true)
              console.log("Wrong answer")
-          }
-        
+          }      
        }
-      //  else {
-      //   let chosenArr = []
-      //   for(let i = 0; i < rightAnswer.length; i++){
-      //     console.log("Inside loop", "right answer", rightAnswer[i], "answer chosen", e.currentTarget.getAttribute('data-appMode'))
-      //     let chosen: string | null = e.currentTarget.getAttribute('data-appMode')
-          
-      //     if(chosen?.match(rightAnswer[i]) !== null){
-      //       chosenArr.push(chosen);
-      //      }
-      //     else {
-      //        console.log("Wrong answer inside loop")
-      //     }
-      //   }
-         
-      //    if(chosenArr.length === rightAnswer.length) {
-      //     setScore(score + 1)
-      //     console.log("our score", score)
-      //     }
-      //   else {
-      //     console.log("sorry")
-      //   }
-      // }
-    // }
 
-    // useEffect(() => {
-  
-    // }, [])
 
   return (
     <div className="questions">
@@ -108,7 +63,6 @@ function Questions() {
           Start
         </h2>
       : 
-      // [(clicked === false ?
       <div>
       <h3 className="question">{questionNum}. {currQuestion}</h3> 
       {answerChoices.map(answer => (
@@ -124,15 +78,6 @@ function Questions() {
       
       <button className="next-button" onClick={nextQuestion}>Next</button>
       </div>
-      // :
-      // <div>
-      // <h3 className="question">{questionNum}. {currQuestion}</h3> 
-      // {answerChoices.map(answer => (
-      //   <button className={buttonClass} data-appMode={ answer }onClick={updateScore}>{answer}</button>
-      // ))}
-      // <button className="next-button" onClick={nextQuestion}>Next</button>
-      // </div>
-      //   )]
     }
     {startClicked === true ?
     <h3>Your Score: {score}</h3>
