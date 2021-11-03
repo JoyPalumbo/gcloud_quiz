@@ -39,7 +39,7 @@
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   /* font-weight: 500; */
-  height: 40px;
+  height: auto;
   width: 500px;
   line-height: 20px;
   list-style: none;
@@ -91,13 +91,29 @@
 
 .rightAnswer {
   background-color: green;
-  padding: 0.3em 1.2em;
-  margin: 1em 0.3em 0.3em 1em;
-  text-align: center;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  height: auto;
+  width: 500px;
+  box-sizing: border-box;
+  margin: 10px 300px;
+  outline: none;
+  padding: 15px 20px;
 }
 
 .wrongAnswer {
   background-color: red;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  height: quto;
+  width: 500px;
+  box-sizing: border-box;
+  margin: 10px 300px;
+  outline: none;
+  padding: 15px 20px;
+
 }
 
 
