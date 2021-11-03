@@ -106,13 +106,13 @@ export const questions: {question: string, answer1: string, answer2: string, ans
     answer4: "Use gcloud query --dry_run to determine the number of bytes read by the query. Use this number in the Pricing Calculator.",
     correctAnswer: ["Use bq query --dry_run to determine the number of bytes read by the query. Use this number in the Pricing Calculator."]
     },
-    // {question: "",
-    // answer1: "",
-    // answer2: "",
-    // answer3: "",
-    // answer4: "",
-    // correctAnswer: []
-    // },
+    {question: "Which is NOT a pre-requisites to be able to create a VM instance?",
+    answer1: "Billing",
+    answer2: "Project",
+    answer3: "Template created",
+    answer4: "APIs enabled",
+    correctAnswer: []
+    },
     // {question: "",
     // answer1: "",
     // answer2: "",
