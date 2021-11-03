@@ -90,7 +90,7 @@
 
 
 .rightAnswer {
-  background-color: green;
+  background-color: #3CB371;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -103,7 +103,7 @@
 }
 
 .wrongAnswer {
-  background-color: red;
+  background-color: #DC143C;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
