@@ -73,21 +73,66 @@
 .question {
   background-color: white;
   color: #EA4C89;
+  width: 80%;
   padding: 10px;
-  margin: 10px 60px;
-  border-radius: 10px;
-  /* display: flex;
+  margin: auto;
+  border-radius: 10px; 
+  display: flex;
   justify-content: center;
-  align-items: center; */
-  margin-bottom: 25px;
+  align-items: center; 
+ margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
+@media only screen and (min-width: 275px) and (max-width: 800px) {
+  .question{   
+    box-sizing: border-box; 
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 15%;
+  }
+
+}
+/* @media screen and (min-width: 600px) {
+  .question {
+    background-color: white;
+    color: #EA4C89;
+    padding: 10px;
+    margin: 10px 60px;
+    border-radius: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+}  */
 
 .neutral-button:hover,
 .neutral-button:focus {
   background-color: #F082AC;
 }
 
+@media only screen and (min-width: 275px) and (max-width: 800px) {
+  .neutral-button{   
+    box-sizing: border-box; 
+    width: 75%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 15%;
+  }
+
+}
 
 .rightAnswer {
   background-color: #3CB371;
@@ -100,6 +145,19 @@
   margin: 10px 300px;
   outline: none;
   padding: 15px 20px;
+}
+
+@media only screen and (min-width: 275px) and (max-width: 800px) {
+  .rightAnswer{   
+    box-sizing: border-box; 
+    width: 75%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 15%;
+  }
+
 }
 
 .wrongAnswer {
@@ -115,7 +173,18 @@
   padding: 15px 20px;
 
 }
+@media only screen and (min-width: 275px) and (max-width: 800px) {
+  .wrongAnswer{   
+    box-sizing: border-box; 
+    width: 75%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 15%;
+  }
 
+}
 
 .App-link {
   color: #61dafb;
@@ -130,12 +199,6 @@
 
 
 @keyframes App-logo-spin {
-  /* from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  } */
   100% {
     -webkit-transform: rotatey(360deg);
     transform: rotatey(360deg);
