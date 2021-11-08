@@ -14,7 +14,7 @@ Next steps are:
 8. [] Have a navigation with home page, about page and resource page
 9. [] Refacter into smaller components to have better seperation of concerns
 10. [] Add back end 
-11. [] Make responsive
+11. [/] Make responsive
 
 
 ## Available Scripts
