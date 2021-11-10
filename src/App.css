@@ -257,18 +257,23 @@ a:active {
 
  /* Navbar */
 .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   display: flex;
+  background-color: #d17fd1;
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
   z-index: 1;
-  width: 100%;
   opacity: 0.9;
   margin-bottom: 1rem;
 }
 
 .navbar ul {
   display: flex;
+  margin-left: 650px
 }
 
 .navbar a {
