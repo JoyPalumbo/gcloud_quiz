@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, MouseEvent } from 'react';
+import React, { useState, MouseEvent } from 'react';
 
 import { questions } from '../data'
 
@@ -57,6 +57,7 @@ function Questions() {
 
 
   return (
+    <div className="question-page"> 
     <div className="questions">
       {/* A. if not clicked start yet show start text */}
           {startClicked === false ?
@@ -98,6 +99,7 @@ function Questions() {
     // D. Else don't show score yet  but show goood luck text
     <h4>Good Luck!</h4>}
 
+    </div>
     </div>
   );
 }
