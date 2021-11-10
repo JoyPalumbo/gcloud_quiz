@@ -1,18 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 import gcloud from './gcloud.png'
 import './App.css';
-import Questions from './components/Questions'
+import Home from './components/Home'
+import Resources from './components/Resources'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'
+// import { Route, BrowserRouter as Router, Link } from 'react-router-dom';
 
-function App() {
+interface AppeProps {
+  // name: string,
+ }
+
+
+const App: React.FC<AppeProps> = (props) => {
+
+// function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={gcloud} className="App-logo" alt="logo" />
-        <h2>Gcloud Quiz </h2>
-
-        <Questions />
-      </header>
+        <div className="App-header">
+        {/* <Navbar /> */}
+        <div className='container'>
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/resources" element={<Resources />} />
+        </Routes>
+    </BrowserRouter>
+  
+    </div>
+    </div>
     </div>
   );
 }

@@ -31,4 +31,4 @@ const Navbar = () => {
     icon: PropTypes.string.isRequired
   }
 
-export default 
+export default Navbar
