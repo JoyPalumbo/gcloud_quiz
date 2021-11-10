@@ -19,6 +19,7 @@ const App: React.FC<AppeProps> = () => {
         <div className="App-header">
    
         <div className='container'>
+          {/* !!! Due to newest version of react-router-dom + typescript had to use BrowserRouter and had to change component to element */}
       {/* BrowserRouter has to have main parent element such as a div tag */}
       <BrowserRouter>
       <div> 

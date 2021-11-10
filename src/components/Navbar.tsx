@@ -8,6 +8,7 @@ const Navbar = () => {
     // const Navbar = ({icon, title}) => {
     return (
       <div className='navbar bg-primary'>
+          <h6>Google's Associate Cloud Certification Quiz</h6>
         {/* <h1> <i className={icon}/>{title}</h1> */}
         <ul>
         <li>

@@ -61,7 +61,7 @@ function Questions() {
     <div className="questions">
       {/* A. if not clicked start yet show start text */}
           {startClicked === false ?
-        <h2 onClick={nextQuestion}>
+        <h2 className="questions-start" onClick={nextQuestion}>
           Start
         </h2>
       : 
