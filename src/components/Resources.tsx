@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-function Resources() {
+function Resources(props: any) {
     return (
         <div className="resource">
             <h4>Google Cloud Skills Boost</h4>

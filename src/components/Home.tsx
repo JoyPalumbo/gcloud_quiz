@@ -2,8 +2,11 @@
 import Questions from './Questions'
 import gcloud from '../gcloud.png'
 
-const Home = () => {
+const Home = (props: any) => {
     // const Navbar = ({icon, title}) => {
+    // function setBodyColor() {
+    //     // props.propColor
+    // }
     return (
         // <header className="App-header">
         <div className="home"> 

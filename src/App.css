@@ -252,16 +252,32 @@ a:active {
 
  /* RESOURCES PAGE */
  .resource {
-   background-color: rgb(28, 28, 129);
-   color: rgb(149, 237, 248);
+   background-color: #090935;
+   color: rgb(139, 218, 250);
+   font-family: Kodchasan, sans-serif;
    height: 78vh;
-   width: 120vh;
-   border-radius: 10px
+   width: 110vh;
+   padding: 5px;
+   border-radius: 10px;
+   margin-top: 100px;
+ }
+
+
+ .resource h4 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+ .resource h6 {
+   padding-left: 220px;
+   margin-top: 6px;
+   font-size: 14px;
+   width: 70%;
+   overflow-wrap: break-word;
  }
 
  .button-link {
-  background-color: rgb(149, 237, 248);
-  color: rgb(28, 28, 129);
+  background-color: rgb(139, 218, 250);
+  color: rgb(29, 30, 32);
   border-radius: 20px;
   border-style: none;
   font-size: 18px;
@@ -270,13 +286,13 @@ a:active {
 
 /* .resource hr { */
   hr {
-    width: 90%;
+    width: 100%;
     height: 1px;
     border: 0 none;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 80px;
-    margin-bottom:90px;
+    margin-top: 40px;
+    margin-bottom:40px;
     background-color:rgb(70, 65, 65);
  }
 /* } */
@@ -312,6 +328,7 @@ a:active {
   z-index: 1;
   opacity: 0.9;
   margin-bottom: 1rem;
+  /* overflow: hidden; */
 }
 
 .navbar ul {
@@ -324,16 +341,39 @@ a:active {
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
-.navbar h6 {
-  padding-right: 400px;
+/* .navbar h6 {
+  padding-right: 400px; */
   /* padding: 0; */
-  margin: 0;
-}
+  /* margin: 0;
+} */
 
 .navbar a:hover {
   color: var(--light-color);
 }
 
+@media only screen and (min-width: 275px) and (max-width: 800px) {
+  .navbar{   
+    box-sizing: border-box; 
+    width: 80%;
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+  }
+
+  .navbar a {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 15%;
+  }
+
+  .resource {
+    width: 80%
+  }
+}
 /* .navbar .welcome span {
   margin-right: 0.6rem;
 } */

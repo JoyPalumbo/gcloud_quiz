@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Home from './components/Home'
 import Resources from './components/Resources'
@@ -12,21 +12,27 @@ interface AppeProps {
 
 
 const App: React.FC<AppeProps> = () => {
+  const [bodyColor, setColor] = useState<string>('#e9a2e9')
+
+  const changeColor = (color: string) => {
+    setColor(color);
+    console.log("changing color from props", color)
+   };
 
 // function App() {
   return (
     <div className="App">
-        <div className="App-header">
+        <div style={{ background: bodyColor }} className="App-header">
    
         <div className='container'>
           {/* !!! Due to newest version of react-router-dom + typescript had to use BrowserRouter and had to change component to element */}
       {/* BrowserRouter has to have main parent element such as a div tag */}
       <BrowserRouter>
       <div> 
-      <Navbar />
+      <Navbar changeColor={changeColor}/>
         <Routes>
-        <Route path="/" element={<Home />} />
-          <Route path="/resources" element={<Resources />} />
+        <Route path="/" element={<Home propColor={bodyColor}/>} />
+          <Route path="/resources" element={<Resources propColor={bodyColor}/>} />
         </Routes>
         </div>
     </BrowserRouter>
