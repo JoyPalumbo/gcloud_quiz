@@ -11,7 +11,7 @@ function Resources(props: any) {
                       credits used for the hands-on learning labs. The cost of the labs are to cover the resources
                       used in Google Cloud such as Virtual Machines, databases, etc
                        </h6>
-    <a href="https://www.cloudskillsboost.google/" >  <button className="button-link">Go to Site</button></a>
+    <a href="https://www.cloudskillsboost.google/" target="_blank">  <button className="button-link">Go to Site</button></a>
     <hr />
   {/* <a href="https://google.com" className="card card2">
       <div className="inner">
