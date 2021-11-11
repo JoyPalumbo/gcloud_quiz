@@ -4,15 +4,23 @@ import React from 'react';
 function Resources(props: any) {
     return (
         <div className="resource">
-            <h4>Google Cloud Skills Boost</h4>
+            <h4>Udemy GCP Associate Cloud Engineer - Google Cloud Certification</h4>
+                  <h6>This is an excellent course on Udemy taught by Ranga Karanam(of in28Minutes).  He breaks down the course into each
+                      service/API that Google Cloud provides.  He gives a broad overview of each subject, then gets into more specific details. 
+                      He does "code alongs", where he has you use each of se!!!!!!!
+                       </h6>
+    <a href="https://www.cloudskillsboost.google/" target="_blank">  <button className="button-link">Go to Site</button></a>
+    <hr />
+    <h4>Google Cloud Skills Boost</h4>
                   <h6>Google has an excellent tutorial to help you prepare for 
                       the Associate Cloud Certification.  It combines both reading material
                       and videos.  The learning material is free and the only cost is the cost of the 
                       credits used for the hands-on learning labs. The cost of the labs are to cover the resources
                       used in Google Cloud such as Virtual Machines, databases, etc
                        </h6>
-    <a href="https://www.cloudskillsboost.google/" target="_blank">  <button className="button-link">Go to Site</button></a>
+    <a href=" https://www.udemy.com/course/google-cloud-certification-associate-cloud-engineer/" target="_blank">  <button className="button-link">Go to Site</button></a>
     <hr />
+   
   {/* <a href="https://google.com" className="card card2">
       <div className="inner">
         <h2 className="title">Mit 117 Sachen durch Klugheimschen Basaltgebirge</h2>
