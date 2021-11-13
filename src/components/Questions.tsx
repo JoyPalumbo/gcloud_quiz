@@ -81,9 +81,9 @@ function Questions() {
         :
         // C. else, once button clicked, show right and wrong answers
       [ clicked === true && answer === rightAnswer[0] ?
-      <button className="rightAnswer" data-appMode={ answer } onClick={updateScore}>{answer}</button>
+      <button className="rightAnswer" type="button" disabled data-appMode={ answer } onClick={updateScore}>{answer} </button>
         :
-        <button className="wrongAnswer" data-appMode={ answer } onClick={updateScore}>{answer}</button>
+        <button className="wrongAnswer" type="button" disabled data-appMode={ answer } onClick={updateScore}>{answer} disabled</button>
       ]
       ))}
       
