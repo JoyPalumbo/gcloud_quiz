@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Home from './components/Home'
 import Resources from './components/Resources'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './components/About';
 // import { Route, BrowserRouter as Router, Link } from 'react-router-dom';
@@ -18,6 +18,7 @@ const App: React.FC<AppeProps> = () => {
   const changeColor = (color: string) => {
     setColor(color);
     console.log("changing color from props", color)
+    console.log(bodyColor)
    };
 
 // function App() {
