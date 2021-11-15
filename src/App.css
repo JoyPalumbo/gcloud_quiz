@@ -76,6 +76,7 @@ margin-top: 12%
   margin: 10px 300px;
   outline: none;
   padding: 15px 20px;
+  display: inline-block;
 
 }
 
@@ -88,6 +89,8 @@ margin-top: 12%
   height: 40px;
   width: 60px;
   font-size: 18px;
+  display: block;
+  margin-left: 50%;
 }
 
 .question {
