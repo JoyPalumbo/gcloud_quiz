@@ -3,7 +3,8 @@ import './App.css';
 import Home from './components/Home'
 import Resources from './components/Resources'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import About from './components/About';
 // import { Route, BrowserRouter as Router, Link } from 'react-router-dom';
 
 interface AppeProps {
@@ -33,6 +34,7 @@ const App: React.FC<AppeProps> = () => {
         <Routes>
         <Route path="/" element={<Home propColor={bodyColor}/>} />
           <Route path="/resources" element={<Resources propColor={bodyColor}/>} />
+          <Route path="/about" element={<About propColor={bodyColor}/>} />
         </Routes>
         </div>
     </BrowserRouter>

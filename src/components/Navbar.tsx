@@ -25,6 +25,9 @@ function isClicked(clickedColor: String){
         <li>
           <Link to='/resources'  onClick={() => isClicked('#090935')}>Resources</Link>
         </li>
+        <li>
+          <Link to='/About'  onClick={() => isClicked('#e9a2e9')}>About</Link>
+        </li>
         </ul>
       </div>
       // </div>

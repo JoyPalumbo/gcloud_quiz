@@ -377,6 +377,18 @@ a:active {
     width: 80%
   }
 }
+
+.about {
+  margin-top: 170px;
+  /* display: block; */
+}
+
+.about a {
+  color:rgb(30, 36, 116);
+  font-size: 26px;
+  /* display: block; */
+}
+
 /* .navbar .welcome span {
   margin-right: 0.6rem;
 } */
