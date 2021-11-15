@@ -1,7 +1,9 @@
 ## About
-I have created this app to help study for the Google associate cloud engineer certification test.  I have gathered these questions from many sources. Some of those sources being from Google's practice exam, questions from Google Cloud Skills Boost course, and various quizes on line. I did not create any of these questions and do not take credit for them.  This is a personal project for me but I am putting it on line in case others can get some use from it.
+I have created this app to help study for the Google associate cloud engineer certification test.  I have gathered these questions from many sources. Some of those sources being from Google's practice exam, questions from Google Cloud Skills Boost course, and other various quizes on line. I did not create any of these questions and do not take credit for them.  This is a personal project for me but I am putting it on line in case others can get some use from it. 
 
-## Next Steps for this quiz
+I am also creating this as an open source project. I will update this read me file for specific instructions for open source once I have finished creating the main functionality of this application. I am open to any changes, be that adding more questions, improving efficiancy of code, styling etc.  I am not a UI/UX designer and don't have an eye for design.  I would love feed back on the styling/functionality of the application.  For now I'm going with cute colors I enjoy but, aside from it perhaps looking gaudy, I also am not sure if the colors will distract from learning/taking the quiz. I am open to all feedback!
+
+## Next Steps for this application
 I just started building this app so I have a lot to do to finish the app. 
 Next steps are:
 1. [x] Have buttons reflect right answers/wrong answers after user has selected choice 
@@ -11,7 +13,7 @@ Next steps are:
 5. [] Show them a percentage/"grade" for quize once finished
 6. [] Open up GitHub repository to be open source
 7. [] Perhaps update style to match Google's style
-8. [] Have a navigation with home page, about page and resource page
+8. [/] Have a navigation with home page, about page and resource page
 9. [] Refacter into smaller components to have better seperation of concerns
 10. [] Add back end 
 11. [/] Make responsive
