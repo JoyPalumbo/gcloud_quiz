@@ -397,6 +397,9 @@ a:active {
   margin: 25px;
 }
 
+.start:hover{
+  color: rgb(165, 11, 179);
+}
 /* .navbar .welcome span {
   margin-right: 0.6rem;
 } */
