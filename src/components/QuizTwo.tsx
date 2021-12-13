@@ -1,6 +1,6 @@
 import React, { useState, useEffect, MouseEvent } from 'react';
 
-import { questions } from '../data'
+import { questionsTwo } from '../data'
 
 function QuizTwo() {
   const [currQuestion, setCurrQuestion] = useState<string>('')
@@ -24,11 +24,11 @@ function QuizTwo() {
       setStartClicked(true)
       setClicked(false)
       setQuestionNum(questionNum + 1)
-      if(questionNum <= questions.length - 1) {
+      if(questionNum <= questionsTwo.length - 1) {
         console.log(questionNum)
-        setCurrQuestion(questions[questionNum].question)
-        setRightAnswer(questions[questionNum].correctAnswer)
-        setAnswerChoices(shuffleArray([questions[questionNum].answer1, questions[questionNum].answer2, questions[questionNum].answer3, questions[questionNum].answer4]))
+        setCurrQuestion(questionsTwo[questionNum].question)
+        setRightAnswer(questionsTwo[questionNum].correctAnswer)
+        setAnswerChoices(shuffleArray([questionsTwo[questionNum].answer1, questionsTwo[questionNum].answer2, questionsTwo[questionNum].answer3, questionsTwo[questionNum].answer4]))
         console.log(currQuestion)
       }
       else {
@@ -59,14 +59,14 @@ function QuizTwo() {
     <div className="questions">
       {/* A. if not clicked start yet show start text */}
           {startClicked === false ?
-        <h2 onClick={nextQuestion}>
-          Start
+        <h2 onClick={nextQuestion} className="start">
+          QuizTwo
         </h2>
       : 
       // A. else show questions
     <div>
       {/* B. Show finished text */}
-        {questionNum === questions.length ?
+        {questionNum === questionsTwo.length ?
     <h3>Finished!!!!</h3>
     :   
     // B. else show questions
@@ -95,7 +95,9 @@ function QuizTwo() {
     <h3>Your Score: {score}</h3>
     :
     // D. Else don't show score yet  but show goood luck text
-    <h4>Good Luck!</h4>}
+    // <h4>Good Luck!</h4>
+    <div></div>
+    }
 
     </div>
   );

@@ -1,6 +1,7 @@
 
-import Questions from './Questions'
 import gcloud from '../gcloud.png'
+import QuizOne from './QuizOne'
+import QuizTwo from './QuizTwo'
 
 const Home = (props: any) => {
     // const Navbar = ({icon, title}) => {
@@ -12,8 +13,9 @@ const Home = (props: any) => {
         <div className="home"> 
         <img src={gcloud} className="App-logo" alt="logo" />
         <h2>Google Associate Cloud Certification Practice Quiz</h2>
-  
-        <Questions />
+        <QuizOne />
+        <QuizTwo />
+
         </div>
     //   </header>
     )
